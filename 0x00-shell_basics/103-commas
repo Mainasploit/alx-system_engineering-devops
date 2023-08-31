@@ -1,25 +1,2 @@
 #!/bin/bash
-
-# Get the list of files and directories in the current directory, including hidden ones
-entries=$(ls -A)
-
-# Sort the entries based on the specified criteria
-sorted_entries=$(echo "$entries" | LC_COLLATE=C sort -t- -k1,1n -k2,2d -k3)
-
-# Prepare the final comma-separated list
-final_list=""
-for entry in $sorted_entries; do
-  if [ "$entry" = "." ] || [ "$entry" = ".." ]; then
-    final_list="$final_list$entry/, "
-  else
-    if [ -d "$entry" ]; then
-      final_list="$final_list$entry/, "
-    else
-      final_list="$final_list$entry, "
-    fi
-  fi
-done
-
-# Print the final list
-echo "$final_list"
-
+ls -xamp 
