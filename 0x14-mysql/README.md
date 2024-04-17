@@ -1,1 +1,1 @@
-0x14-mysql
+Solutions to tasks on MySQL
