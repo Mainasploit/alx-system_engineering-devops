@@ -7,13 +7,21 @@ Root Cause: The outage was caused by a misconfigured firewall rule blocking inco
 **Timeline**
 
 08:00 AM: Issue detected by monitoring alert indicating a spike in server errors.
+
 08:05 AM: Engineers received automated alerts regarding the server errors.
+
 08:10 AM: Initial investigation focused on application logs and database performance.
+
 08:30 AM: Assumed root cause to be database overload due to recent code deployment.
+
 09:00 AM: Further investigation revealed no database issues, shifting focus to network configurations.
+
 09:30 AM: Discovered a misconfigured firewall rule blocking incoming traffic.
+
 09:45 AM: Incident escalated to network infrastructure team for immediate action.
+
 10:00 AM: Firewall rule corrected, and traffic resumed to normal levels.
+
 10:30 AM: Web application restored to full functionality.
 
 **Root Cause and Resolution**
